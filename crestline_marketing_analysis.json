@@ -1,0 +1,305 @@
+{
+  "personas": {
+    "Gen Z Young (18-23)": {
+      "segment": "AudienceSegment.GEN_Z_YOUNG",
+      "core_motivations": [
+        "Mental health & self-care",
+        "Authenticity & real connections",
+        "Social proof & community",
+        "Personal growth & skill development",
+        "Creative expression"
+      ],
+      "pain_points": [
+        "Traditional golf feels exclusive/pretentious",
+        "High barrier to entry (cost, skill, time)",
+        "Lack of relatable content/culture",
+        "Not enough social/competitive elements",
+        "Boring, slow-paced perception"
+      ],
+      "aspirations": [
+        "Be part of a cool, inclusive community",
+        "Master a skill that's unique/impressive",
+        "Create shareable content moments",
+        "Build online presence through hobby",
+        "Find mindful, meditative activities"
+      ],
+      "media_consumption": [
+        "TikTok (primary discovery)",
+        "Instagram Reels",
+        "YouTube (how-to & entertainment)",
+        "Discord communities",
+        "Twitch streams"
+      ],
+      "purchase_triggers": [
+        "Viral trends & influencer endorsement",
+        "Limited editions & scarcity",
+        "Community challenges & participation",
+        "Visual aesthetics (Instagrammable)",
+        "Interactive/gamified experiences"
+      ],
+      "emotional_drivers": [
+        "FOMO (fear of missing out)",
+        "Belonging to in-group",
+        "Achievement & progression",
+        "Self-expression & identity",
+        "Curiosity & discovery"
+      ],
+      "brand_values": [
+        "Authenticity (no fake corporate speak)",
+        "Inclusivity & accessibility",
+        "Environmental consciousness",
+        "Social responsibility",
+        "Transparency"
+      ],
+      "nostalgia_references": [
+        "Pok\u00e9mon (primary)",
+        "Naruto",
+        "Avatar: The Last Airbender",
+        "Early YouTube (2010s)",
+        "Minecraft"
+      ],
+      "skepticism_level": "HIGH",
+      "brand_loyalty": "LOW"
+    },
+    "Gen Z Old (24-28)": {
+      "segment": "AudienceSegment.GEN_Z_OLD",
+      "core_motivations": [
+        "Career development & networking",
+        "Wellness & stress relief",
+        "Building real-world skills",
+        "Quality over quantity",
+        "Financial independence"
+      ],
+      "pain_points": [
+        "Golf is expensive to start",
+        "Time commitment conflicts with career",
+        "Intimidating for beginners",
+        "Lack of peer participation",
+        "Old-school culture doesn't resonate"
+      ],
+      "aspirations": [
+        "Join a hobby that aids networking",
+        "Develop a lifelong skill",
+        "Balance work with meaningful leisure",
+        "Be part of modern golf culture",
+        "Collect meaningful items with value"
+      ],
+      "media_consumption": [
+        "Instagram (career & lifestyle)",
+        "LinkedIn (professional)",
+        "YouTube (in-depth content)",
+        "Podcasts",
+        "Reddit communities"
+      ],
+      "purchase_triggers": [
+        "Peer recommendations",
+        "Quality & craftsmanship",
+        "Investment value",
+        "Practical utility + aesthetics",
+        "Brand story & mission"
+      ],
+      "emotional_drivers": [
+        "Achievement & competence",
+        "Status & recognition",
+        "Personal growth",
+        "Connection & community",
+        "Control & autonomy"
+      ],
+      "brand_values": [
+        "Authenticity & honesty",
+        "Quality & durability",
+        "Innovation",
+        "Social impact",
+        "Inclusivity"
+      ],
+      "nostalgia_references": [
+        "Pok\u00e9mon (childhood)",
+        "Naruto/Dragon Ball Z",
+        "Harry Potter",
+        "Early social media (Vine, early Instagram)",
+        "Classic Nintendo games"
+      ],
+      "skepticism_level": "HIGH",
+      "brand_loyalty": "MEDIUM"
+    },
+    "Millennial Young (29-34)": {
+      "segment": "AudienceSegment.MILLENNIAL_YOUNG",
+      "core_motivations": [
+        "Work-life balance",
+        "Experiences over things (but collectibles bridge both)",
+        "Nostalgia for childhood",
+        "Mastery & expertise",
+        "Social connection"
+      ],
+      "pain_points": [
+        "Limited free time",
+        "Balancing family/career/hobbies",
+        "Want quality, not quantity",
+        "Tired of overhyped products",
+        "Seeking authenticity in brands"
+      ],
+      "aspirations": [
+        "Master a skill worth investing in",
+        "Build a meaningful collection",
+        "Connect with like-minded people",
+        "Relive childhood joys with adult quality",
+        "Find hobbies that reduce stress"
+      ],
+      "media_consumption": [
+        "Instagram (lifestyle)",
+        "Facebook groups (communities)",
+        "YouTube (long-form)",
+        "Podcasts",
+        "Email newsletters"
+      ],
+      "purchase_triggers": [
+        "Nostalgia & emotional connection",
+        "Premium quality",
+        "Limited editions",
+        "Detailed reviews & research",
+        "Brand heritage & story"
+      ],
+      "emotional_drivers": [
+        "Nostalgia",
+        "Achievement",
+        "Belonging",
+        "Status (subtle)",
+        "Competence"
+      ],
+      "brand_values": [
+        "Quality & craftsmanship",
+        "Authenticity",
+        "Sustainability",
+        "Heritage & story",
+        "Community"
+      ],
+      "nostalgia_references": [
+        "Transformers (original)",
+        "Pok\u00e9mon (Red/Blue era)",
+        "Dragon Ball Z",
+        "Yu-Gi-Oh",
+        "90s culture"
+      ],
+      "skepticism_level": "MEDIUM",
+      "brand_loyalty": "MEDIUM"
+    },
+    "Millennial Core (35-40)": {
+      "segment": "AudienceSegment.MILLENNIAL_CORE",
+      "core_motivations": [
+        "Established hobbies & interests",
+        "Premium quality products",
+        "Networking & social status",
+        "Investment mindset",
+        "Legacy & tradition"
+      ],
+      "pain_points": [
+        "Oversaturated market",
+        "Want established brands with heritage",
+        "Skeptical of new trends",
+        "Time-poor, money-rich",
+        "Want immediate quality signals"
+      ],
+      "aspirations": [
+        "Be an early adopter of quality brands",
+        "Build valuable collections",
+        "Share passion with family/kids",
+        "Support brands that align with values",
+        "Achieve mastery in hobbies"
+      ],
+      "media_consumption": [
+        "Facebook",
+        "LinkedIn",
+        "Email",
+        "Traditional media (TV, magazines)",
+        "Podcasts"
+      ],
+      "purchase_triggers": [
+        "Brand reputation",
+        "Quality materials & craftsmanship",
+        "Investment potential",
+        "Expert endorsements",
+        "Heritage & authenticity"
+      ],
+      "emotional_drivers": [
+        "Status & achievement",
+        "Nostalgia",
+        "Legacy",
+        "Competence",
+        "Autonomy"
+      ],
+      "brand_values": [
+        "Heritage & tradition",
+        "Quality above all",
+        "Exclusivity (tasteful)",
+        "Sustainability",
+        "Craftsmanship"
+      ],
+      "nostalgia_references": [
+        "80s/90s culture",
+        "Original Transformers",
+        "Classic sports memorabilia",
+        "Vintage collectibles",
+        "Traditional golf culture"
+      ],
+      "skepticism_level": "HIGH",
+      "brand_loyalty": "HIGH"
+    }
+  },
+  "frameworks": {
+    "Cialdini's 6 Principles": {
+      "name": "Cialdini's 6 Principles of Persuasion",
+      "principles": {
+        "Reciprocity": "Give value first (free content, tips, community access)",
+        "Commitment": "Small commitments lead to big ones (follow \u2192 engage \u2192 purchase)",
+        "Social Proof": "Show others collecting, using, enjoying",
+        "Authority": "Expert golfers, pro endorsements, skill validation",
+        "Liking": "Relatable brand personality, shared values",
+        "Scarcity": "Limited editions, exclusive drops, Genesis sets"
+      },
+      "application": "Use scarcity for launches, social proof for community building"
+    },
+    "Self-Determination Theory": {
+      "name": "Self-Determination Theory (Motivation)",
+      "principles": {
+        "Autonomy": "Choice in which Crestline to collect, how to use cards",
+        "Competence": "Cards improve golf skill, progression system",
+        "Relatedness": "Community of collectors, shared identity"
+      },
+      "application": "Create progression system that increases competence while maintaining autonomy"
+    },
+    "Gamification (Octalysis)": {
+      "name": "Gamification (Octalysis Framework)",
+      "core_drives": {
+        "Epic Meaning": "Be part of Line Energy mythology, chosen guardian",
+        "Accomplishment": "Complete sets, unlock achievements, level up",
+        "Empowerment": "Create content, share trick shots, personalize",
+        "Ownership": "Build YOUR collection, YOUR Crestline identity",
+        "Social Influence": "Compare collections, trade, compete",
+        "Scarcity": "Limited edition Crestlines, rare characters",
+        "Unpredictability": "Mystery packs, random drops, surprise unlocks",
+        "Avoidance": "FOMO on limited releases"
+      },
+      "application": "Layer multiple drives - don't rely on just scarcity or points"
+    },
+    "Identity Theory": {
+      "name": "Identity Theory (Collectibles)",
+      "principles": {
+        "Self-Expression": "Which Crestline are you?",
+        "Tribal Belonging": "Crestline community, not just customers",
+        "Status Signaling": "Rare cards signal dedication/taste",
+        "Narrative Identity": "Your Crestline tells your golf journey"
+      },
+      "application": "Make collecting part of personal identity, not just ownership"
+    },
+    "Fogg Behavior Model": {
+      "name": "Fogg Behavior Model (B=MAT)",
+      "formula": "Behavior = Motivation \u00d7 Ability \u00d7 Trigger",
+      "components": {
+        "Motivation": "Create emotional desire (nostalgia, achievement, belonging)",
+        "Ability": "Make purchase easy (clear pricing, accessible)",
+        "Trigger": "Timely prompts (limited drops, influencer posts, FOMO)"
+      },
+      "application": "High motivation alone won't convert - need easy purchase + timely trigger"
+    }
+  }
+}
