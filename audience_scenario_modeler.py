@@ -91,6 +91,26 @@ class AudienceScenarioModeler:
                 market_size=7000,  # 7M combined
                 growth_rate=0.45,  # Weighted average
                 avg_purchase_power=37500  # Weighted average
+            ),
+
+            "family_strategy": AudienceScenario(
+                name="Family Strategy (Juniors 10-17, Parents Buy)",
+                primary_segment=AudienceSegment.PARENT_BUYERS,
+                secondary_segment=AudienceSegment.GEN_ALPHA_OLD,
+                description="Target parents buying for junior golfers - dual appeal to kids & parents",
+                market_size=3700,  # 3.7M junior golfers (parents make purchases)
+                growth_rate=0.48,  # 48% 5-year growth (HIGHEST of all segments!)
+                avg_purchase_power=50000  # Parent income, not kids
+            ),
+
+            "gen_alpha_focus": AudienceScenario(
+                name="Gen Alpha Direct (14-17 Direct Purchase)",
+                primary_segment=AudienceSegment.GEN_ALPHA_OLD,
+                secondary_segment=AudienceSegment.GEN_Z_YOUNG,
+                description="Target older Gen Alpha with allowance/part-time job money",
+                market_size=2000,  # ~2M older junior golfers
+                growth_rate=0.48,  # Same high growth
+                avg_purchase_power=2000  # Allowance + part-time jobs only
             )
         }
 
@@ -135,17 +155,23 @@ class AudienceScenarioModeler:
         # Calculate revenue potential (simplified model)
         # Revenue = Market Size × Conversion Rate × Avg Order Value
         conversion_rates = {
-            AudienceSegment.GEN_Z_YOUNG: 0.02,  # 2% (lower purchasing power)
-            AudienceSegment.GEN_Z_OLD: 0.04,     # 4% (best balance)
+            AudienceSegment.GEN_ALPHA_YOUNG: 0.08,  # 8% (parents buy via kid requests)
+            AudienceSegment.GEN_ALPHA_OLD: 0.05,    # 5% (limited own money)
+            AudienceSegment.PARENT_BUYERS: 0.10,    # 10% (HIGH - parents justify as educational)
+            AudienceSegment.GEN_Z_YOUNG: 0.02,      # 2% (lower purchasing power)
+            AudienceSegment.GEN_Z_OLD: 0.04,        # 4% (best balance)
             AudienceSegment.MILLENNIAL_YOUNG: 0.035,  # 3.5% (higher skepticism)
-            AudienceSegment.MILLENNIAL_CORE: 0.03,    # 3% (highest standards)
+            AudienceSegment.MILLENNIAL_CORE: 0.03,  # 3% (highest standards)
         }
 
         avg_order_values = {
-            AudienceSegment.GEN_Z_YOUNG: 45,      # Lower price point
-            AudienceSegment.GEN_Z_OLD: 70,        # Mid-premium
-            AudienceSegment.MILLENNIAL_YOUNG: 85, # Premium willing
-            AudienceSegment.MILLENNIAL_CORE: 120, # Ultra-premium
+            AudienceSegment.GEN_ALPHA_YOUNG: 50,   # Parents buy sets as gifts
+            AudienceSegment.GEN_ALPHA_OLD: 25,     # Allowance purchases (singles)
+            AudienceSegment.PARENT_BUYERS: 65,     # Family sets + educational justification
+            AudienceSegment.GEN_Z_YOUNG: 45,       # Lower price point
+            AudienceSegment.GEN_Z_OLD: 70,         # Mid-premium
+            AudienceSegment.MILLENNIAL_YOUNG: 85,  # Premium willing
+            AudienceSegment.MILLENNIAL_CORE: 120,  # Ultra-premium
         }
 
         primary_conversion = conversion_rates[scenario.primary_segment]
@@ -179,6 +205,24 @@ class AudienceScenarioModeler:
     def _get_pricing_recommendations(self, scenario: AudienceScenario) -> Dict:
         """Recommend pricing based on audience"""
         pricing = {
+            AudienceSegment.GEN_ALPHA_YOUNG: {
+                "single": "$9.99-12.99",
+                "set_4": "$39.99-49.99",
+                "special_edition": "$59.99-69.99",
+                "rationale": "Parent-friendly pricing for birthday/holiday gifts, comparable to Pokémon packs"
+            },
+            AudienceSegment.GEN_ALPHA_OLD: {
+                "single": "$12.99-15.99",
+                "set_4": "$49.99-59.99",
+                "special_edition": "$79.99-89.99",
+                "rationale": "Allowance-accessible for singles, parent-bought sets for special occasions"
+            },
+            AudienceSegment.PARENT_BUYERS: {
+                "single": "$12.99-14.99",
+                "set_4": "$49.99-59.99",
+                "special_edition": "$79.99-99.99",
+                "rationale": "Educational premium - parents pay more for 'developmental' products"
+            },
             AudienceSegment.GEN_Z_YOUNG: {
                 "single": "$15-19",
                 "set_4": "$45-55",
@@ -244,6 +288,9 @@ class AudienceScenarioModeler:
     def _assess_competitive_advantage(self, scenario: AudienceScenario) -> str:
         """Assess competitive positioning for this scenario"""
         advantages = {
+            AudienceSegment.GEN_ALPHA_YOUNG: "Zero competition in junior golf collectibles, fastest growth segment (48%), Pokémon-model proven",
+            AudienceSegment.GEN_ALPHA_OLD: "Fast growth + emerging purchasing power, bridge to Gen Z, tournament/camp B2B potential",
+            AudienceSegment.PARENT_BUYERS: "HUGE whitespace - parents want golf products for kids, educational justification drives premium pricing, tournament prize market untapped",
             AudienceSegment.GEN_Z_YOUNG: "First-mover in Gen Z golf collectibles, high viral potential but lower immediate revenue",
             AudienceSegment.GEN_Z_OLD: "Optimal whitespace - golf interest + collectible nostalgia + spending power converge",
             AudienceSegment.MILLENNIAL_YOUNG: "Strong nostalgia play, premium willing, but more competitive landscape",

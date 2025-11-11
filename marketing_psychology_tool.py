@@ -18,6 +18,9 @@ from enum import Enum
 
 class AudienceSegment(Enum):
     """Target audience segments with age ranges"""
+    GEN_ALPHA_YOUNG = "Gen Alpha Young (10-13)"
+    GEN_ALPHA_OLD = "Gen Alpha Old (14-17)"
+    PARENT_BUYERS = "Parent Buyers (30-45)"
     GEN_Z_YOUNG = "Gen Z Young (18-23)"
     GEN_Z_OLD = "Gen Z Old (24-28)"
     MILLENNIAL_YOUNG = "Millennial Young (29-34)"
@@ -350,6 +353,192 @@ class MarketingPsychologyTool:
                     "Classic sports memorabilia",
                     "Vintage collectibles",
                     "Traditional golf culture"
+                ],
+                skepticism_level="HIGH",
+                brand_loyalty="HIGH"
+            ),
+
+            AudienceSegment.GEN_ALPHA_YOUNG: AudiencePersona(
+                segment=AudienceSegment.GEN_ALPHA_YOUNG,
+                core_motivations=[
+                    "Fun & entertainment",
+                    "Peer acceptance & fitting in",
+                    "Collecting & completing sets",
+                    "Gaming & interactive experiences",
+                    "Learning new skills (when disguised as fun)"
+                ],
+                pain_points=[
+                    "Golf seems boring/slow compared to video games",
+                    "Need parental approval/money for purchases",
+                    "Want instant gratification",
+                    "Peer pressure (need friends who also play)",
+                    "Short attention span"
+                ],
+                aspirations=[
+                    "Be good at something their friends aren't",
+                    "Have the coolest collectibles",
+                    "Beat their parents/older siblings at something",
+                    "Build impressive collections to show off",
+                    "Be part of exclusive groups/clubs"
+                ],
+                media_consumption=[
+                    "YouTube (primary - gaming, unboxing, tutorials)",
+                    "TikTok (entertainment)",
+                    "Roblox/Minecraft (gaming)",
+                    "Instagram (following friends)",
+                    "Twitch (watching gaming)"
+                ],
+                purchase_triggers=[
+                    "Friend has it (peer influence #1)",
+                    "YouTuber/influencer unboxing",
+                    "Birthday/holiday wish lists",
+                    "Tournament prizes/rewards",
+                    "Limited edition/exclusivity"
+                ],
+                emotional_drivers=[
+                    "Peer belonging (strongest driver)",
+                    "Achievement & mastery",
+                    "Status among friends",
+                    "Curiosity & novelty",
+                    "Pride in collection"
+                ],
+                brand_values=[
+                    "Cool/fun factor (most important)",
+                    "Quality that impresses friends",
+                    "Fairness (no pay-to-win feeling)",
+                    "Interactive/engaging",
+                    "Authenticity to characters/story"
+                ],
+                nostalgia_references=[
+                    "Current Pokémon (Scarlet/Violet era)",
+                    "Naruto/My Hero Academia",
+                    "Minecraft",
+                    "Roblox",
+                    "Among Us"
+                ],
+                skepticism_level="LOW",
+                brand_loyalty="MEDIUM"
+            ),
+
+            AudienceSegment.GEN_ALPHA_OLD: AudiencePersona(
+                segment=AudienceSegment.GEN_ALPHA_OLD,
+                core_motivations=[
+                    "Competitive achievement",
+                    "Social status & identity expression",
+                    "Skill development with visible progress",
+                    "Independence from parents",
+                    "Building unique personal brand"
+                ],
+                pain_points=[
+                    "Golf seen as 'old people sport' by peers",
+                    "Need independence but rely on parents financially",
+                    "Want authentic experiences, not kids stuff",
+                    "Peer judgment is harsh",
+                    "Limited disposable income (allowance/part-time jobs)"
+                ],
+                aspirations=[
+                    "Stand out with unique interests",
+                    "Earn money/financial independence",
+                    "Build valuable collections (investment mindset emerging)",
+                    "Be taken seriously by adults",
+                    "Excel at something that matters"
+                ],
+                media_consumption=[
+                    "YouTube (deep dives, strategy)",
+                    "TikTok (discovery & trends)",
+                    "Instagram (identity expression)",
+                    "Discord (communities)",
+                    "Reddit (lurking, learning)"
+                ],
+                purchase_triggers=[
+                    "Peer validation (what friends respect)",
+                    "Influencer endorsement (authentic only)",
+                    "Investment/resale value",
+                    "Competitive advantage (helps me win)",
+                    "Quality that lasts (anti-disposable)"
+                ],
+                emotional_drivers=[
+                    "Identity formation (who am I?)",
+                    "Competence & mastery",
+                    "Autonomy & independence",
+                    "Status & respect",
+                    "Purpose & meaning"
+                ],
+                brand_values=[
+                    "Authenticity (anti-fake)",
+                    "Quality & durability",
+                    "Respect for intelligence (don't talk down)",
+                    "Innovation & uniqueness",
+                    "Environmental/social consciousness"
+                ],
+                nostalgia_references=[
+                    "Pokémon (current + older gens)",
+                    "Anime (Demon Slayer, Attack on Titan, My Hero Academia)",
+                    "Fortnite (earlier seasons)",
+                    "Minecraft (classic)",
+                    "Marvel/DC"
+                ],
+                skepticism_level="MEDIUM",
+                brand_loyalty="LOW"
+            ),
+
+            AudienceSegment.PARENT_BUYERS: AudiencePersona(
+                segment=AudienceSegment.PARENT_BUYERS,
+                core_motivations=[
+                    "Child's development & happiness",
+                    "Quality family time & bonding",
+                    "Educational value (justify purchase)",
+                    "Building life skills in children",
+                    "Being a 'good parent' (social validation)"
+                ],
+                pain_points=[
+                    "Guilt over screen time vs outdoor activities",
+                    "Budget constraints (kids are expensive)",
+                    "Skeptical of fads/low-quality toys",
+                    "Want products that last/have value",
+                    "Tired of kids losing interest quickly"
+                ],
+                aspirations=[
+                    "Raise well-rounded, skilled children",
+                    "Share hobbies with kids (bonding)",
+                    "Teach valuable life lessons through activities",
+                    "Keep kids active & outdoors",
+                    "Build family traditions & memories"
+                ],
+                media_consumption=[
+                    "Facebook (parenting groups)",
+                    "Instagram (family lifestyle)",
+                    "YouTube (parent influencers, product reviews)",
+                    "Email newsletters (parenting tips)",
+                    "Mom/Dad blogs & forums"
+                ],
+                purchase_triggers=[
+                    "Educational value (strongest for justification)",
+                    "Peer parent recommendations",
+                    "Child's persistent requests",
+                    "Multi-use/longevity (worth the investment)",
+                    "Positive reviews from other parents"
+                ],
+                emotional_drivers=[
+                    "Love & care for child",
+                    "Pride in child's achievements",
+                    "Guilt relief (I'm doing the right thing)",
+                    "Nostalgia (sharing my childhood passions)",
+                    "Social validation (other parents approve)"
+                ],
+                brand_values=[
+                    "Safety & quality (non-negotiable)",
+                    "Educational value",
+                    "Durability & longevity",
+                    "Positive values (teamwork, sportsmanship)",
+                    "Transparency & honesty"
+                ],
+                nostalgia_references=[
+                    "Original Pokémon (their childhood)",
+                    "Classic sports trading cards",
+                    "Family golf outings (positive memories)",
+                    "Collectibles they had as kids",
+                    "90s/2000s culture"
                 ],
                 skepticism_level="HIGH",
                 brand_loyalty="HIGH"
